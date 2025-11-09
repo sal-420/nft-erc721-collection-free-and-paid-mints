@@ -31,7 +31,7 @@ const CollectionConfig: CollectionConfigInterface = {
     price: 0.0042069, 
     maxMintAmountPerTx: 2,
   },
-  contractAddress: '0xB0Cbe158913A307cC2B17921d4df244f13bE1e6c',
+  contractAddress: '0xf567d57b1450258ebbcfa323798a0ef90d081aef',
   marketplaceIdentifier: 'notorious-rugs',
   marketplaceConfig: Marketplaces.openSea,
   whitelistAddresses,

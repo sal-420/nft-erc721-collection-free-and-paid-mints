@@ -293,7 +293,7 @@ async freeMintTokens(amount: number): Promise<void>
             <div className="use-block-explorer">
               Hey, looking for a <strong>super-safe experience</strong>?
               <br />
-              You can interact with the smart-contract <strong>directly</strong> through <a href={this.generateContractUrl()} target="_blank">{this.state.networkConfig.blockExplorer.name}</a>, without connecting your wallet to this DAPP!<br />
+              You can interact with the smart-contract <strong>directly</strong> through <a color="blue" href={this.generateContractUrl()} target="_blank">{this.state.networkConfig.blockExplorer.name}</a>, without connecting your wallet to this DAPP!<br />
               <br />
               Keep safe!
             </div>
@@ -428,7 +428,7 @@ async freeMintTokens(amount: number): Promise<void>
       CollectionConfig.contractAddress!,
       ContractAbi,
       this.provider.getSigner(),
-    ) as NftContractType;
+    ) as unknown as NftContractType;
 
     this.refreshContractState();
   }
